@@ -39,7 +39,9 @@ Run a Local Server:
     In Visual Studio Code:
         Right-click on index.html and select "Open with Live Server" (requires the Live Server extension).
 
-Use the search bar to find movies. A list of matching movies will appear.
+Use the search bar to find movies. 
+
+    A list of matching movies will appear.
 
 Click on a movie to view its details:
 
