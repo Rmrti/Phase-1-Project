@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rammetto+One&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styling for the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #282828);
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styling for navigation and branding */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(20, 20, 20, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo styling in the header */
+header .logo h1 {
+  font-size: 1.8em;
+  color: #00d4ff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Hover effect for the title */
+header .logo h1:hover {
+  color: #ff5e5e;
+  font-weight: bolder;
+}
+
+/* Styling for the search bar */
+.search-bar {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #00d4ff;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Focus state for the search bar */
+.search-bar:focus {
+  border-color: #00ff85;
+}
+
+/* Main Layout */
+main {
+  padding: 40px 10%;
+  flex: 1;
+}
+
+/* Loading and error message styles */
+#loading,
+#error-message {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #ff5e5e;
+  display: none;
+}
+
+/* Utility class for hiding elements */
+.hidden {
+  display: none !important;
+}
+
+/* Movie list grid styling */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual movie item styling */
+.movie-item {
+  text-align: center;
+  background: rgba(40, 40, 40, 0.8);
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for movie items */
+.movie-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for movie poster images */
+.movie-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Styling for movie title */
+.movie-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+/* Movie Details Section */
+.movie-details {
+  padding: 40px;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styling for movie info */
+.movie-info {
+  font-family: "Quicksand", serif;
+  font-size: larger;
+  text-align: left;
+}
+
+/* Styling for movie poster */
+.movie-poster {
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid #00d4ff;
+}
+
+/* Styling for trailer and watch now headers */
+.trailer-header, .watch-header {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Styling for movie trailer and watch now*/
+.movie-trailer, .watch-link {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(30, 30, 30, 0.9);
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+/* Styling for movie overview */
+.movie-overview {
+  margin: 20px 0;
+  font-size: 1em;
+  color: #b0b0b0;
+  line-height: 1.5;
+}
+
+/* Styling for buttons*/
+.watch-button,.back-button,
+.favorite-button,
+.submit-comment {
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #00d4ff, #00ff85);
+  color: #1c1c1c;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+/*hover effect for buttons*/
+.watch-button:hover,.back-button:hover,
+.favorite-button:hover,
+.submit-comment:hover {
+  background: linear-gradient(90deg, #00ff85, #00d4ff);
+  transform: translateY(-3px);
+}
+
+/* Styling for comment header */
+.comment-header {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #00d4ff;
+}
+
+/* Styling for comment input section */
+.comment-input {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #00d4ff;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  margin-top: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Styling for comment box when it's focused on*/
+.comment-input:focus {
+  border-color: #00ff85;
+}
+
+/* Styling for the list of comments */
+.comments-list {
+  margin-top: 20px;
+  text-align: left;
+  background: rgba(40, 40, 40, 0.9);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Styling for comments list div */
+.comments-list div {
+  padding: 10px;
+  background: rgba(50, 50, 50, 0.8);
+  margin-bottom: 5px;
+  border-radius: 8px;
+  color: #e0e0e0;
+}
+
+/*definition for fade in animation*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

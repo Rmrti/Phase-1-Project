@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Database App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1 id="page-title">Mutuma's Movie Database</h1>
+    </div>
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search for movies...">
+  </header>
+
+  <main>
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="error-message" class="hidden">No movie found. Please try again.</div>
+
+    <section id="movie-list" class="movie-list"></section>
+
+    <section id="movie-details" class="movie-details hidden">
+      <button id="back-button" class="back-button">Back</button>
+      <div id="movie-info" class="movie-info">
+        <h2 id="movie-title" class="movie-title"></h2>
+        <img id="movie-poster" alt="Movie Poster" class="movie-poster">
+        <p id="movie-overview" class="movie-overview"></p>
+        <p>Release Date: <span id="movie-release-date"></span></p>
+        <p>Rating: <span id="movie-rating"></span></p>
+        
+        <h3 class="trailer-header">Trailer:</h3>
+        <div id="movie-trailer" class="movie-trailer">Loading trailer...</div>
+    
+        <h3 class="watch-header">Watch Now:</h3>
+        <div id="watch-link" class="watch-link">Loading watch options...</div>
+    
+        <h3 class="comment-header">Comments:</h3>
+        <div id="comments-section" class="comments-section">
+          <input type="text" id="comment-input" class="comment-input" placeholder="Add a comment...">
+          <button id="submit-comment" class="submit-comment">Submit</button>
+          <div id="comments-list" class="comments-list"></div>
+        </div>
+    
+        <button id="favorite-button" class="favorite-button">Add to Favorites</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
