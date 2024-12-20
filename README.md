@@ -30,9 +30,14 @@ How to Use
 git clone git@github.com:Rmrti/Phase-1-Project.git
 cd Phase-1-Project
 
-Open the index.html file in a browser:
+    Open the Project:
 
-    open index.html
+        Open the project folder in Visual Studio Code (or your preferred editor).
+
+    Run a Local Server:
+
+    In Visual Studio Code:
+        Right-click on index.html and select "Open with Live Server" (requires the Live Server extension).
 
     Use the search bar to find movies. A list of matching movies will appear.
 
