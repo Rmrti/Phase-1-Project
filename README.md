@@ -27,7 +27,7 @@ How to Use
 
     Clone the repository:
 
-git clone git@github.com:Rmrti/Phase-1-Project.git
+    git clone git@github.com:Rmrti/Phase-1-Project.git
 cd Phase-1-Project
 
     Open the Project:
