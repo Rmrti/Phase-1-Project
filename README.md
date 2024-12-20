@@ -42,9 +42,9 @@ Run a Local Server:
 Use the search bar to find movies. A list of matching movies will appear.
 
 Click on a movie to view its details:
-        Trailer: A YouTube trailer will be displayed (if available).
-        Watch Now: Links to platforms where the movie can be streamed.
-        Comments: Add and view comments for the movie.
+    1. Trailer: A YouTube trailer will be displayed (if available).
+    2. Watch Now: Links to platforms where the movie can be streamed.
+    3. Comments: Add and view comments for the movie.
 
 Use the "Add to Favorites" button to save the movie to your favorites list.
 

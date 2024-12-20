@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--head section with title and link to css-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Database App</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mutuma's Movie DB App</title> <!--page title-->
+  <link rel="stylesheet" href="style.css"> <!--link to the css file-->
 </head>
 <body>
+  <!--Main title of the webpage-->
   <header>
     <div class="logo">
       <h1 id="page-title">Mutuma's Movie Database</h1>
@@ -14,12 +16,15 @@
     <input type="text" id="search-bar" class="search-bar" placeholder="Search for movies...">
   </header>
 
+  <!--Main contents of the webpage-->
   <main>
     <div id="loading" class="hidden">Loading...</div>
     <div id="error-message" class="hidden">No movie found. Please try again.</div>
-
+    
+    <!--Movie list section-->
     <section id="movie-list" class="movie-list"></section>
-
+    
+    <!--Entire movie details section-->
     <section id="movie-details" class="movie-details hidden">
       <button id="back-button" class="back-button">Back</button>
       <div id="movie-info" class="movie-info">
@@ -29,12 +34,15 @@
         <p>Release Date: <span id="movie-release-date"></span></p>
         <p>Rating: <span id="movie-rating"></span></p>
         
+        <!--Trailer section-->
         <h3 class="trailer-header">Trailer:</h3>
         <div id="movie-trailer" class="movie-trailer">Loading trailer...</div>
     
+        <!--Watch now section-->
         <h3 class="watch-header">Watch Now:</h3>
         <div id="watch-link" class="watch-link">Loading watch options...</div>
     
+        <!--comments section-->
         <h3 class="comment-header">Comments:</h3>
         <div id="comments-section" class="comments-section">
           <input type="text" id="comment-input" class="comment-input" placeholder="Add a comment...">
@@ -42,11 +50,13 @@
           <div id="comments-list" class="comments-list"></div>
         </div>
     
+        <!--Favoriting button-->
         <button id="favorite-button" class="favorite-button">Add to Favorites</button>
       </div>
     </section>
   </main>
 
+  <!--link to the index.js-->
   <script type="module" src="index.js"></script>
 </body>
 </html>
