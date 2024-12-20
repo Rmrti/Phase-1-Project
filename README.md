@@ -40,7 +40,7 @@ cd Phase-1-Project
         Right-click on index.html and select "Open with Live Server" (requires the Live Server extension).
 
     Use the search bar to find movies. A list of matching movies will appear.
-d
+
     Click on a movie to view its details:
         Trailer: A YouTube trailer will be displayed (if available).
         Watch Now: Links to platforms where the movie can be streamed.
