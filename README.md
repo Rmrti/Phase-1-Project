@@ -1,4 +1,5 @@
 ##Mutuma's Movie Database
+
 #Overview
 
 Mutuma's Movie Database is a web application that allows users to search for movies, view detailed information about them, watch trailers, and leave comments. It also includes a feature to add movies to a favorites list.
@@ -50,6 +51,8 @@ Click on a movie to view its details:
     3. Comments: Add and view comments for the movie.
 
 Use the "Add to Favorites" button to save the movie to your favorites list.
+
+### Alternatively you can visit the live site as hosted on Github Pages : https://rmrti.github.io/Phase-1-Project/
 
 #Key Components
 1. HTML Structure
